@@ -28,7 +28,7 @@ def jeopardy_win(C, D, P, Q, wager_amt_A, wager_amt_B):
         
     return winprob
 '''factor in ties'''
-print(jeopardy_win(8000,4000,0.6,0.6,0,4000))
+print(jeopardy_win(10000,4000,0.6,0.6,0,4000))
 
 
 def prob_space(C, D, P, Q):
