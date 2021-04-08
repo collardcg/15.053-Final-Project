@@ -16,7 +16,7 @@ def jeopardy_win(C, D, P, Q, wager_amt_A, wager_amt_B):
 #        return 0.5
 #    if expectationA < expectationB:
 #        return 0
-# Test
+
     winprob = 0
     if (C + wager_amt_A) - (D + wager_amt_B) > 0:
         winprob += P*Q
