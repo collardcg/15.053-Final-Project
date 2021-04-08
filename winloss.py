@@ -26,9 +26,15 @@ def jeopardy_win(C, D, P, Q, wager_amt_A, wager_amt_B):
         winprob += (1-P) * Q
     if (C - wager_amt_A) - (D - wager_amt_B) > 0:
         winprob += (1-P) * (1-Q)
-        
+    if (C + wager_amt_A) - (D + wager_amt_B) = 0:
+        winprob += P*Q/2
+    if (C + wager_amt_A) - (D - wager_amt_B) = 0:
+        winprob += P * (1-Q)/2
+    if (C - wager_amt_A) - (D + wager_amt_B) = 0:
+        winprob += (1-P) * Q/2
+    if (C - wager_amt_A) - (D - wager_amt_B) = 0:
+        winprob += (1-P) * (1-Q)/2
     return winprob
-'''factor in ties'''
 print(jeopardy_win(12000,4000,0.6,0.6,0,4000))
 
 
