@@ -55,4 +55,4 @@ def prob_space(C, D, P, Q):
     df = pd.DataFrame(probspace,rangelistA, rangelistB)
     return df
             
-print(prob_space(20000,10000,.6,.4))
+print(prob_space(500,500,.6,.4))
